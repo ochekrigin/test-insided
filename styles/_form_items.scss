@@ -1,0 +1,61 @@
+.checkbox {
+  display: block;
+  margin: 0 0 -1px;
+  position: relative;
+  input[type="checkbox"] {
+    display: none;
+  }
+  input[type="checkbox"]:checked + label {
+    &:before {
+      display: block;
+    }
+  }
+  label {
+    font: #{$base-font-size - 4px}/#{$base-line-height - 5px} $base-font-family;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 0 17px;
+    position: relative;
+    cursor: pointer;
+    &:after {
+      content: '';
+      background: url("../images/icons/icon-checkbox.gif") no-repeat;
+      width: 12px;
+      height: 13px;
+      position: absolute;
+      top: 3px;
+      left: 0;
+    }
+    &:before {
+      display: none;
+      content: '';
+      background: url("../images/icons/icon-checkbox-checked.gif") no-repeat;
+      width: 13px;
+      height: 15px;
+      position: absolute;
+      top: 1px;
+      left: 0;
+      z-index: 1;
+    }
+  }
+}
+.datepicker-here {
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  padding: 8px 9px 6px;
+  border: none;
+  background: none;
+  z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+.form-element {
+  width: 28px;
+  border: 1px solid $gray;
+  border-radius: 3px;
+  padding: 0;
+  text-align: center;
+  height: 28px;
+  margin: 0 2px;
+}

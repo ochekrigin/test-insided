@@ -1,0 +1,358 @@
+body {
+  background: $gray-light;
+  margin: 0;
+  min-width: 320px;
+  font: #{$base-font-size - 4px}/#{$base-line-height + 4px} $base-font-family;
+}
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.header {
+  background: $dark;
+  text-align: center;
+  overflow: hidden;
+  height: 50px;
+  img {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 -300px;
+  }
+}
+.twocolumn {
+  padding: 0;
+  overflow: hidden;
+  @media only screen and (min-width: $xl-breakpoint) {
+    padding: 0 0 0 200px;
+  }
+}
+.content {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 20px 56px;
+  background: $white;
+  @media only screen and (min-width: $lg-breakpoint) {
+    padding: 20px 30px 56px;
+  }
+  @media only screen and (min-width: $lxl-breakpoint) {
+    padding: 20px 90px 56px 50px;
+  }
+}
+.sidebar {
+  position: relative;
+  display: none;
+  @media only screen and (min-width: $xl-breakpoint) {
+    display: block;
+    width: 200px;
+    float: left;
+    margin: 0 0 0 -200px;
+  }
+  img {
+    display: block;
+  }
+}
+.block {
+  border: 1px solid $gray;
+  background: $gray-light;
+  padding: 15px 20px;
+  margin: 0 0 10px;
+}
+.block-row {
+  border-top: 1px solid $gray;
+  padding: 14px 15px 20px;
+  margin: 0 -20px;
+  position: relative;
+  @media only screen and (min-width: $md-breakpoint) {
+    padding: 14px 20px 20px;
+  }
+  &:first-of-type {
+    border-top: none;
+    padding-top: 0;
+  }
+}
+.holder-cols {
+  overflow: hidden;
+  margin: 0 0 -10px;
+  position: relative;
+  .col {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px 0 0;
+    position: relative;
+    box-sizing: border-box;
+    width: 48%;
+    margin: 0 0 15px;
+    @media only screen and (min-width: $md-breakpoint) {
+      width: 32%;
+    }
+    @media only screen and (min-width: $lg-breakpoint) {
+      width: 16.3%;
+      float: left;
+      display: inline;
+      margin: 0;
+      &.col-large {
+        width: 19.8%;
+      }
+      &.col-middle {
+        width: 18%;
+      }
+      &.col-small {
+        width: 14.3%;
+      }
+      &.col-last {
+        margin: 0 -30px 0 0;
+      }
+    }
+  }
+}
+.btn-holder {
+  &.no-bottom-indent {
+    margin: -4px 0 -25px;
+    position: relative;
+  }
+}
+.toolbar {
+  margin: 0 0 10px;
+  .btn {
+    color: #505050;
+    margin: 0 0 0 5px;
+    background-color: rgb(255,255,255);
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 100%);
+    width: 100%;
+    margin: 0 0 5px;
+    @media only screen and (min-width: $lg-breakpoint) {
+      width: auto;
+      margin: 0 0 0 5px;
+    }
+    &.btn-white {
+      background: $white;
+      min-width: 106px;
+      box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+      .ico-loader {
+        margin: -1px 5px 0 0;
+      }
+    }
+  }
+  .align-right {
+    float: none !important;
+    @media only screen and (min-width: $lg-breakpoint) {
+      float: right !important;
+    }
+  }
+}
+.ico-loader {
+  background: url('../images/icons/icon-loader.gif') no-repeat;
+  width: 11px;
+  height: 13px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.toolbar-hidden {
+  display: none;
+  @media only screen and (min-width: $lg-breakpoint) {
+    opacity: 0;
+    display: inline;
+  }
+}
+.toolbar-holder {
+  position: relative;
+  &:after {
+    clear: both;
+    display: block;
+    content: '';
+  }
+  .col {
+    margin: 0 0 10px;
+    @media only screen and (min-width: $lg-breakpoint) {
+      float: left;
+      width: 50%;
+      margin: 0;
+    }
+  }
+}
+.toolbar-indents {
+  padding: 10px 10px 0 4px;
+}
+.pagination {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  @media only screen and (min-width: $md-breakpoint) {
+    padding: 0 9px 0 0;
+    float: right;
+    text-align: left;
+  }
+  .link-arrow {
+    font-size: 20px;
+  }
+  > li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 -4px 0 0;
+    position: relative;
+    padding: 0 0 0 1px;
+    padding: 0 7px;
+    min-width: 14px;
+    text-align: center;
+    min-height: 30px;
+    @media only screen and (min-width: $lg-breakpoint) {
+      padding: 0 9px;
+    }
+    &:first-child {
+      &:after {
+        display: none;
+      }
+    }
+    a,
+    span.link{
+      margin: 0;
+    }
+    a.link {
+      color: #39b5c7;
+    }
+    span.link {
+      color: #ddd;
+    }
+    &:after {
+      content: '';
+      height: 8px;
+      width: 1px;
+      background: $gray;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin: -3px 0 0;
+    }
+  }
+}
+.btn-list {
+  list-style: none;
+  margin: 0 0 0 -6px;
+  padding: 0 0 8px;
+  a {margin: 0;}
+  > li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 -4px 0 0;
+    position: relative;
+    padding: 0 6px;
+  }
+}
+.scroll-box {
+  height: 202px;
+  overflow: auto;
+  padding: 0 7px;
+  .link {
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}
+[data-category-box] {
+  &.hidden {
+    [data-clear-category] {
+      opacity: 0;
+    }
+  }
+}
+.datepicker {
+  width: 198px;
+  box-shadow: none;
+  margin: -12px 0 0 -2px;
+  font-size: $base-font-size - 5px;
+  padding: 9px 0 15px;
+  border-radius: 0 0 3px 3px;
+}
+.datepicker--cell-day {
+  &.-selected- {
+    box-shadow: inset 0 0 2px rgba(0,0,0,0.2);
+  }
+}
+.datepicker--pointer {
+  display: none;
+}
+.datepicker--days-names {
+  width: 166px;
+  margin: 0 auto -1px;
+  border: 1px solid $gray;
+}
+.datepicker--day-name {
+  width: 14.28%;
+  color: #505050;
+  font-size: $base-font-size - 8px;
+  height: 20px;
+}
+.datepicker--content {
+  padding: 0;
+  margin-top: -1px;
+}
+.datepicker--nav {
+  border-radius: 3px 3px 0 0;
+  min-height: 20px;
+  border: 1px solid $gray;
+  width: 158px;
+  margin: 0 auto;
+  background-color: rgb(255,255,255);
+  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 100%);
+  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 100%);
+}
+.datepicker--nav-action {
+  svg {display: none;}
+}
+.datepicker--nav-title {
+  font: #{$base-font-size - 4px}/16px $base-bold-font-family;
+  color: #505050;
+  i {
+    color: #505050;
+  }
+}
+.datepicker--cell {
+  width: 14.28%;
+  height: 24px;
+  border-right: 1px solid $gray;
+  border-bottom: 1px solid $gray;
+  border-radius: 0;
+}
+[data-action="prev"],
+[data-action="next"]{
+  position: relative;
+}
+[data-action="prev"] {
+  &:after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 6px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3.5px 4px 3.5px 0;
+    border-color: transparent #505050 transparent transparent;
+
+  }
+}
+[data-action="next"] {
+  &:after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 6px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3.5px 0 3.5px 4px;
+    border-color: transparent transparent transparent #505050;
+  }
+}
+.datepicker--cells {
+  border-left: 1px solid $gray;
+  border-top: 1px solid $gray;
+  width: 167px;
+  margin: 0 auto;
+}

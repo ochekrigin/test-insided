@@ -1,0 +1,6 @@
+h2 {
+  font: #{$base-font-size - 4px}/#{$base-line-height} $base-bold-font-family;
+  margin: 0 0 4px;
+  font-style: normal;
+  color: $dark-light;
+}

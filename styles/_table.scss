@@ -1,0 +1,117 @@
+.table {
+  background: #fafafa;
+  border: 1px solid $gray;
+  margin: 0 0 10px;
+  font: #{$base-font-size - 5px}/#{$base-line-height - 4px} $base-font-family;
+  @media only screen and (min-width: $lg-breakpoint) {
+    font: #{$base-font-size - 4px}/#{$base-line-height + 4px} $base-font-family;
+  }
+  &.active {
+    .toolbar-hidden {
+      display: block;
+      @media only screen and (min-width: $lg-breakpoint) {
+        opacity: 1;
+        display: inline-block;
+      }
+    }
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    border-bottom: 1px solid $gray;
+    min-width: 762px;
+    @media only screen and (min-width: $lg-breakpoint) {
+      min-width: 100%;
+    }
+  }
+  tr {
+    &.super-user {
+      td {
+        background: $white;
+      }
+    }
+    &.selected {
+      td {background: $blue-light;}
+    }
+  }
+  th {
+    background-color: rgb(255,255,255);
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 100%);
+    padding: 7px 5px 6px;
+    border-bottom: 1px solid $gray;
+  }
+  td {
+    text-align: center;
+    border-left: 1px solid $gray;
+    border-top: 1px solid $gray;
+    padding: 16px 5px 12px;
+    background: #fafafa;
+    font: #{$base-font-size - 4px}/#{$base-line-height - 4px} $base-font-family;
+    &:first-child {
+      text-align: left;
+      border-left: none;
+    }
+    a {
+      text-decoration: none;
+      color: $dark-light;
+      line-height: $base-line-height -5px;
+      font-family: $base-bold-font-family;
+    }
+    .checkbox {
+      margin: -8px 0 0 3px;
+    }
+  }
+  .cell-1 {
+    width: 27.5%;
+    text-align: left;
+  }
+  .cell-2 {
+    width: 8.5%;
+  }
+  .cell-3 {
+    width: 8.5%;
+  }
+  .cell-4 {
+    width: 13.8%;
+  }
+  .cell-5 {
+    width: 13.6%;
+  }
+  .cell-6 {
+    width: 13.6%;
+  }
+  .cell-7 {
+    width: 13.6%;
+  }
+  .checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    margin: -4px 0 -3px 3px;
+    label {
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    }
+  }
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 0 1px;
+    @media only screen and (min-width: $lg-breakpoint) {
+      margin: -2px 2px 1px;
+    }
+  }
+  .btn-window {
+    margin: 2px 3px 0 0;
+  }
+}
+.align-right {
+  float: right;
+}
+.table-scroll {
+  max-width: 767px;
+  overflow: auto;
+  @media only screen and (min-width: $lg-breakpoint) {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InSided</title>
+    <link rel="stylesheet" href="styles/datepicker.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header class="header">
+</header>
+<div class="main">
+    <div class="container">
+        <div class="twocolumn">
+            <aside class="sidebar">
+            </aside>
+            <article class="content">
+                <div class="block">
+                    <div class="block-row" data-search>
+                        <h2>Advanced search</h2>
+                        <div class="dropdown-box" data-search-row="1">
+                            <div class="col">
+                                <div class="dropdown">
+                                    <button type="button" data-dropdown-opener class="btn-arrow">Comments</button>
+                                    <div class="dropdown-item">
+                                        <ul class="dropdown-list">
+                                            <li><a href="#" class="dropdown-link">Item 1</a></li>
+                                            <li><a href="#" class="dropdown-link">Item 2</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="dropdown">
+                                    <button type="button" disabled data-dropdown-opener class="btn-arrow">is greater than</button>
+                                    <div class="dropdown-item">
+                                        <ul class="dropdown-list">
+                                            <li><a href="#" class="dropdown-link">Item 1</a></li>
+                                            <li><a href="#" class="dropdown-link">Item 2</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-box dropdown-box-hidden" data-search-row="2">
+                            <div class="col">
+                                <div class="dropdown">
+                                    <button type="button" data-dropdown-opener class="btn-arrow">Registration date</button>
+                                    <div class="dropdown-item">
+                                        <ul class="dropdown-list">
+                                            <li><a href="#" class="dropdown-link">Item 1</a></li>
+                                            <li><a href="#" class="dropdown-link">Item 2</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="dropdown">
+                                    <button type="button" disabled data-dropdown-opener class="btn-arrow">Select item</button>
+                                    <div class="dropdown-item">
+                                        <ul class="dropdown-list">
+                                            <li><a href="#" class="dropdown-link">before</a></li>
+                                            <li><a href="#" class="dropdown-link">after</a></li>
+                                            <li><a href="#" class="dropdown-link">on</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="dropdown">
+                                    <button type="button" disabled class="btn-arrow" data-dropdown-opener>&nbsp;</button>
+                                    <input type='text' placeholder="Select date" class='datepicker-here' data-language='en' />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn-delete hidden" data-row-delete>Close</button>
+                            </div>
+                        </div>
+                        <div class="dropdown-box dropdown-box-hidden"  data-search-row="3">
+                            <div class="col">
+                                <div class="dropdown">
+                                    <button type="button" data-dropdown-opener class="btn-arrow">Usergroup</button>
+                                    <div class="dropdown-item">
+                                        <ul class="dropdown-list">
+                                            <li><a href="#" class="dropdown-link">Item 1</a></li>
+                                            <li><a href="#" class="dropdown-link">Item 2</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="dropdown">
+                                    <button type="button" disabled data-dropdown-opener class="btn-arrow">Select one or more options</button>
+                                    <div class="dropdown-item" data-checkbox-parent>
+                                        <div class="scroll-box">
+                                            <ul class="btn-list">
+                                                <li>
+                                                    <a href="#" class="link link-blue" data-check-all>Check all</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link link-blue" data-uncheck-all>Uncheck all</a>
+                                                </li>
+                                            </ul>
+                                            <h2>Group 1</h2>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="group-1">
+                                                <label for="group-1">Option #1 for group 1</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="group-2">
+                                                <label for="group-2">Option #2 for group 1</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="group-3">
+                                                <label for="group-3">Option #3 for group 1</label>
+                                            </div>
+                                            <h2>Group 2</h2>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="group-4">
+                                                <label for="group-4">Forum</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="group-5">
+                                                <label for="group-5">Ipsum</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="group-6">
+                                                <label for="group-6">Dorol</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn-delete hidden" data-row-delete>Close</button>
+                            </div>
+                        </div>
+                        <div class="btn-holder">
+                            <button type="button" class="btn btn-green" data-add-search-row>Add row</button>
+                        </div>
+                    </div>
+                    <div class="block-row">
+                        <h2>Columns</h2>
+                        <div class="holder-cols" data-category>
+                            <div class="col">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-1">
+                                    <label for="item-1">Usertitle</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-2">
+                                    <label for="item-2">Comments</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-3">
+                                    <label for="item-3">Delete comments</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-4">
+                                    <label for="item-4">Delete topics</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-5">
+                                    <label for="item-5">Questions solved</label>
+                                </div>
+                            </div>
+                            <div class="col col-large">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-6">
+                                    <label for="item-6">Topics</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-7">
+                                    <label for="item-7">Usergroup</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-8">
+                                    <label for="item-8">Secundairy usergroup</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-9">
+                                    <label for="item-9">Registration date</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-10">
+                                    <label for="item-10">Last login</label>
+                                </div>
+                            </div>
+                            <div class="col col-middle">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-11">
+                                    <label for="item-11">Logins</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-12">
+                                    <label for="item-12">Last comment</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-13">
+                                    <label for="item-13">Email</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-14">
+                                    <label for="item-14">SSO-ID</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-15">
+                                    <label for="item-15">IP-address</label>
+                                </div>
+                            </div>
+                            <div class="col col-middle">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-16">
+                                    <label for="item-16">Gender</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-17">
+                                    <label for="item-17">Date of Birth</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-18">
+                                    <label for="item-18">Location</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-19">
+                                    <label for="item-19">Interest</label>
+                                </div>
+                            </div>
+                            <div class="col col-small">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-21">
+                                    <label for="item-21">Profession</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-22">
+                                    <label for="item-22">Signature</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-23">
+                                    <label for="item-23">Notes</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-24">
+                                    <label for="item-24">Badges</label>
+                                </div>
+                            </div>
+                            <div class="col col-last">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-26">
+                                    <label for="item-26">Reputation received</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-27">
+                                    <label for="item-27">Reputation given</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-28">
+                                    <label for="item-28">Followers</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-29">
+                                    <label for="item-29">Following</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-row">
+                        <div class="btn-holder no-bottom-indent">
+                            <button type="button" class="btn btn-blue">Update</button>
+                            <a href="#" class="link link-red">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="toolbar">
+                    <div class="toolbar-holder">
+                        <div class="col hidden" data-category-box>
+                            <a href="#" class="link link-red" data-clear-category>Clear selection</a>
+                        </div>
+                        <div class="col">
+                            <div class="dropdown align-right">
+                                <button type="button" data-dropdown-opener class="btn-arrow">10 Rows</button>
+                                <div class="dropdown-item">
+                                    <ul class="dropdown-list">
+                                        <li><a href="#" class="dropdown-link">Item 1</a></li>
+                                        <li><a href="#" class="dropdown-link">Item 2</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="pagination">
+                                <li>
+                                    <span class="link">First</span>
+                                </li>
+                                <li>
+                                    <span class="link link-arrow">«</span>
+                                </li>
+                                <li>
+                                    Page
+                                    <input type="text" class="form-element" value="1">
+                                    of 12
+                                </li>
+                                <li>
+                                    <a href="#" class="link link-arrow">»</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link link-blue">Last</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="table" data-checkbox-parent="true">
+                    <div class="table-scroll">
+                        <table>
+                        <tr>
+                            <th class="cell-1">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-table-1" data-check-item="true">
+                                    <label for="item-table-1"></label>
+                                </div>
+                                <a href="#" class="btn-order increase">Username</a>
+                            </th>
+                            <th class="cell-2">Comments</th>
+                            <th class="cell-3">Topics</th>
+                            <th class="cell-4">Usergroup</th>
+                            <th class="cell-5">Registration date</th>
+                            <th class="cell-6">Last login</th>
+                            <th class="cell-7">Last comment</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-table-43">
+                                    <label for="item-table-43"></label>
+                                </div>
+                                <img src="images/img-user-1.gif" width="25" height="23" alt="img-description">
+                                <a href="#">Amber H.</a>
+                                <a href="#" class="align-right btn-window">
+                                    <img src="images/icons/ico-window.png" width="13" height="12" alt="img-description">
+                                </a>
+                            </td>
+                            <td>64</td>
+                            <td>9</td>
+                            <td>Registrered user</td>
+                            <td>19-mar-12 12:00</td>
+                            <td>16-aug-12 12:11</td>
+                            <td>16-aug-12 16:10</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-table-4">
+                                    <label for="item-table-4"></label>
+                                </div>
+                                <img src="images/img-user-2.gif" width="25" height="23" alt="img-description">
+                                <a href="#">Bart Pineapple </a>
+                                <a href="#" class="align-right btn-window">
+                                    <img src="images/icons/ico-window.png" width="13" height="12" alt="img-description">
+                                </a>
+                            </td>
+                            <td>37</td>
+                            <td>-</td>
+                            <td>Registrered user</td>
+                            <td>20-mar-11 13:57</td>
+                            <td>15-may-12 17:34</td>
+                            <td>14-may-12 20:01</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-table-5">
+                                    <label for="item-table-5"></label>
+                                </div>
+                                <img src="images/img-user-3.gif" width="25" height="23" alt="img-description">
+                                <a href="#">Caitlyn Appleseed</a>
+                                <a href="#" class="align-right btn-window">
+                                    <img src="images/icons/ico-window.png" width="13" height="12" alt="img-description">
+                                </a>
+                            </td>
+                            <td>189</td>
+                            <td>13</td>
+                            <td>Registrered user</td>
+                            <td>13-aug-12 22:09</td>
+                            <td>13-aug-12 22:10</td>
+                            <td>13-aug-12 23:50</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-table-6">
+                                    <label for="item-table-6"></label>
+                                </div>
+                                <img src="images/img-user-4.gif" width="25" height="23" alt="img-description">
+                                <a href="#">Carmen Candy</a>
+                                <a href="#" class="align-right btn-window">
+                                    <img src="images/icons/ico-window.png" width="13" height="12" alt="img-description">
+                                </a>
+                            </td>
+                            <td>411</td>
+                            <td>22</td>
+                            <td>Moderator</td>
+                            <td>01-jan-11 11:21</td>
+                            <td>15-aug-12 17:17</td>
+                            <td>15-aug-12 18:13</td>
+                        </tr>
+                        <tr class="super-user">
+                            <td>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-table-7">
+                                    <label for="item-table-7"></label>
+                                </div>
+                                <img src="images/img-user-5.gif" width="25" height="23" alt="img-description">
+                                <a href="#">Dolf Dreamer</a>
+                                <a href="#" class="align-right btn-window">
+                                    <img src="images/icons/ico-window.png" width="13" height="12" alt="img-description">
+                                </a>
+                            </td>
+                            <td>282</td>
+                            <td>-</td>
+                            <td>Super-user</td>
+                            <td>18-jan-11 12:08</td>
+                            <td>16-aug-12 13:12</td>
+                            <td>16-aug-12 14:22</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-table-8">
+                                    <label for="item-table-8"></label>
+                                </div>
+                                <img src="images/img-user-6.gif" width="25" height="23" alt="img-description">
+                                <a href="#">Edgar Enders</a>
+                                <a href="#" class="align-right btn-window">
+                                    <img src="images/icons/ico-window.png" width="13" height="12" alt="img-description">
+                                </a>
+                            </td>
+                            <td>37</td>
+                            <td>-</td>
+                            <td>Registrered user</td>
+                            <td>12-dec-11 08:55</td>
+                            <td>05-apr-12 08:08</td>
+                            <td>04-apr-12 23:59</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-table-9">
+                                    <label for="item-table-9"></label>
+                                </div>
+                                <img src="images/img-user-7.gif" width="25" height="23" alt="img-description">
+                                <a href="#">Jane Blackswan</a>
+                                <a href="#" class="align-right btn-window">
+                                    <img src="images/icons/ico-window.png" width="13" height="12" alt="img-description">
+                                </a>
+                            </td>
+                            <td>186</td>
+                            <td>13</td>
+                            <td>Registrered user</td>
+                            <td>04-feb-12 14:34</td>
+                            <td>16-aug-12 12:11</td>
+                            <td>14-aug-12 07:33</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-table-10">
+                                    <label for="item-table-10"></label>
+                                </div>
+                                <img src="images/img-user-8.gif" width="25" height="23" alt="img-description">
+                                <a href="#">Jennifer Appleseed</a>
+                                <a href="#" class="align-right btn-window">
+                                    <img src="images/icons/ico-window.png" width="13" height="12" alt="img-description">
+                                </a>
+                            </td>
+                            <td>75</td>
+                            <td>2</td>
+                            <td>Moderator</td>
+                            <td>16-mar-12 18:12</td>
+                            <td>15-may-12 17:34</td>
+                            <td>16-aug-12 16:10</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-table-11">
+                                    <label for="item-table-11"></label>
+                                </div>
+                                <img src="images/img-user-9.gif" width="25" height="23" alt="img-description">
+                                <a href="#">John Doe</a>
+                                <a href="#" class="align-right btn-window">
+                                    <img src="images/icons/ico-window.png" width="13" height="12" alt="img-description">
+                                </a>
+                            </td>
+                            <td>111</td>
+                            <td>-</td>
+                            <td>Registrered user</td>
+                            <td>30-jan-12 21:00</td>
+                            <td>13-aug-12 22:10</td>
+                            <td>13-aug-12 23:50</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="item-table-12">
+                                    <label for="item-table-12"></label>
+                                </div>
+                                <img src="images/img-user-10.gif" width="25" height="23" alt="img-description">
+                                <a href="#">John Foe</a>
+                                <a href="#" class="align-right btn-window">
+                                    <img src="images/icons/ico-window.png" width="13" height="12" alt="img-description">
+                                </a>
+                            </td>
+                            <td>189</td>
+                            <td>3</td>
+                            <td>Super-user</td>
+                            <td>07-may-12 04:14</td>
+                            <td>05-apr-12 08:08</td>
+                            <td>14-may-12 20:01</td>
+                        </tr>
+                    </table>
+                    </div>
+                    <div class="toolbar toolbar-indents">
+                        <div class="toolbar-holder">
+                            <div class="dropdown dropdown-inline toolbar-hidden">
+                                <button type="button" data-dropdown-opener class="btn-arrow">Change usergroup</button>
+                                <div class="dropdown-item">
+                                    <ul class="dropdown-list">
+                                        <li><a href="#" class="dropdown-link">Registered user</a></li>
+                                        <li><a href="#" class="dropdown-link">Super-user</a></li>
+                                        <li><a href="#" class="dropdown-link">Moderator</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdown dropdown-inline toolbar-hidden">
+                                <button type="button" data-dropdown-opener class="btn-arrow">Add secundairy user</button>
+                                <div class="dropdown-item">
+                                    <ul class="dropdown-list">
+                                        <li><a href="#" class="dropdown-link">Registered user</a></li>
+                                        <li><a href="#" class="dropdown-link">Super-user</a></li>
+                                        <li><a href="#" class="dropdown-link">Moderator</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdown dropdown-inline toolbar-hidden">
+                                <button type="button" data-dropdown-opener class="btn-arrow">Permissions</button>
+                                <div class="dropdown-item">
+                                    <ul class="dropdown-list">
+                                        <li><a href="#" class="dropdown-link">Registered user</a></li>
+                                        <li><a href="#" class="dropdown-link">Super-user</a></li>
+                                        <li><a href="#" class="dropdown-link">Moderator</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="button" class="btn toolbar-hidden">Apply</button>
+                            <button type="button" class="btn align-right">Export to Excel</button>
+                            <button type="button" class="btn btn-white align-right"><i class="ico-loader"></i>72%</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="toolbar">
+                    <div class="dropdown align-right">
+                        <button type="button" data-dropdown-opener class="btn-arrow">10 Rows</button>
+                        <div class="dropdown-item">
+                            <ul class="dropdown-list">
+                                <li><a href="#" class="dropdown-link">Item 1</a></li>
+                                <li><a href="#" class="dropdown-link">Item 2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="pagination">
+                        <li>
+                            <span class="link">First</span>
+                        </li>
+                        <li>
+                            <span class="link link-arrow">«</span>
+                        </li>
+                        <li>
+                            Page
+                            <input type="text" class="form-element" value="1">
+                            of 12
+                        </li>
+                        <li>
+                            <a href="#" class="link link-arrow">»</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link link-blue">Last</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+<script src="js/datepicker.min.js"></script>
+<script src="js/datepicker.en.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

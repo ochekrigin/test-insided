@@ -1,0 +1,42 @@
+/* font family variable srtarts */
+$base-font-family:         'Helvetica', Arial, sans-serif;
+$base-bold-font-family:    'Helvetica Bold', Arial, sans-serif;
+/* font family variable ends */
+
+/* font size variable srtarts */
+$base-font-size:           16px;
+/* font size variable ends */
+
+/* line height variable srtarts */
+$base-line-height:         21px;
+/* line height variable ends */
+
+/* color variable srtarts */
+$dark:                     #000;
+$dark-light:               #111;
+$gray:                     #c5c5c5;
+$gray-light:               #f8f8f8;
+$white:                    #fff;
+$red:                      #cb5841;
+$red-dark:                 #d9604c;
+$green:                    #9dcb3f;
+$green-dark:               #78a81e;
+$blue:                     #26bcf5;
+$blue-dark:                #1697c5;
+$blue-light:               #ebf8fe;
+$blue-lightest:               #2caff3;
+/* color variable ends */
+
+/* common variable srtarts */
+$max-width:                 1280px;
+/* common variable ends */
+
+// breakpoints start
+$xs-breakpoint: 320px;
+$sm-breakpoint: 480px;
+$xm-breakpoint: 568px;
+$md-breakpoint: 640px;
+$lg-breakpoint: 768px;
+$xl-breakpoint: 960px;
+$lxl-breakpoint: 1200px;
+// breakpoints end
