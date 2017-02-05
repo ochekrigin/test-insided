@@ -630,6 +630,9 @@ template {
       text-overflow: ellipsis; }
       @media only screen and (min-width: 768px) {
         .dropdown.dropdown-inline .btn-arrow {
+          width: 131px; } }
+      @media only screen and (min-width: 960px) {
+        .dropdown.dropdown-inline .btn-arrow {
           width: 141px; } }
   .dropdown.active {
     z-index: 2; }

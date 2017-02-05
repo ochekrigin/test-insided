@@ -45,6 +45,9 @@
       white-space: nowrap;
       text-overflow: ellipsis;
       @media only screen and (min-width: $lg-breakpoint) {
+        width: 131px;
+      }
+      @media only screen and (min-width: $xl-breakpoint) {
         width: 141px;
       }
     }
